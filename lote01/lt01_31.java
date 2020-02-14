@@ -9,12 +9,11 @@ package lote01;
  *
  * @author Laboratorio101
  */
-public class lt01_25 {
-    public static void lt01_25(){
-             int horas, minutos, hi, hf, mi, mf;
+public class lt01_31 {
+    public static void lt01_31(){
         
-        System.out.println("");
-        
-    }
-    
+        for (int i = 10; i <= 150; i++){
+            System.out.println("Quadrado de " + i + " é: " + i*i);
+        }
+}
 }

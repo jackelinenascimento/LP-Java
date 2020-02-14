@@ -9,12 +9,6 @@ package lote01;
  *
  * @author Laboratorio101
  */
-public class lt01_25 {
-    public static void lt01_25(){
-             int horas, minutos, hi, hf, mi, mf;
-        
-        System.out.println("");
-        
-    }
+public class lt01_30 {
     
 }
