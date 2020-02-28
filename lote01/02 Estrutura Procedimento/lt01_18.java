@@ -22,7 +22,7 @@ public class lt01_18 {
         System.out.println("Digite o valor do segundo número: ");
         y = teclado.nextInt();
         
-        
+        calcularDiferenca(x, y);
     }
 
     public static void calcularDiferenca(int x, int y){

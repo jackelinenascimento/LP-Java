@@ -30,6 +30,7 @@ public class lt01_16 {
         System.out.println("Digite a quantidade de dependentes: ");
         dependentes = teclado.nextFloat();
         
+	calcularSalario(horasTrabalhadas, valorHora, percentualDescontos, dependentes);
         
     }
 
