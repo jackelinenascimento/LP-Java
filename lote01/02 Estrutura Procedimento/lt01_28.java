@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -23,7 +23,12 @@ public class lt01_28 {
         System.out.println("Digite o preço atual do produto: ");
         precoAtual = teclado.nextFloat();
         
-        if (vendaMensal < 500 && precoAtual < 30){
+        calcularPreco(vendaMensal, precoAtual);
+    }
+
+    public static void calcularPreco(int vendaMensal, int precoAtual){
+
+	if (vendaMensal < 500 && precoAtual < 30){
             System.out.println("Novo preço: " + precoAtual * 1.1);
         } else if (vendaMensal >= 500 && vendaMensal < 1000 && precoAtual >= 30 && precoAtual < 80){
             System.out.println("Novo preço: " + precoAtual * 1.15);
@@ -32,5 +37,6 @@ public class lt01_28 {
         } else {
             System.out.println("O preço não sofreu alterações: " + precoAtual);
         }
-    }
+
+   }
 }

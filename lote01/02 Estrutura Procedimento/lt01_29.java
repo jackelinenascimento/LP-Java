@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -24,13 +24,19 @@ public class lt01_29 {
         System.out.println("Informe o valor do investimento: ");
         valor = teclado.nextFloat();
         
-        if (tipo == 1){
+        calcularValor(tipo, valor);
+        
+    }
+    
+    public static void calcularValor(int tipo, float valor){
+	
+	if (tipo == 1){
             System.out.println("Valor corrigido em 30 dias: " + valor * 1.03);
         } else if (tipo == 2){
             System.out.println("Valor corrigido em 30 dias: " + valor * 1.05);
         } else {
             System.out.println("Tipo e/ou valor informado inválido.");
         }
-        
-    }
+		
+   }
 }

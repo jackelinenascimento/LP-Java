@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class lt01_20 {
     public static void lt01_20(){
-          float a, b, c, delta, x1, x2;
+          float a, b, c;
         
         System.out.println("*** EQUAÇÃO DO 2º GRAU ***");
         Scanner teclado = new Scanner(System.in);
@@ -27,7 +27,15 @@ public class lt01_20 {
         System.out.println("Digite o valor de C: ");
         c = teclado.nextFloat();
         
-        delta = (b*b) - (4*a*c);
+	calcularRaiz(a, b, c);
+    }
+
+
+    public static void calcularRaiz(float a, float b, float c){
+
+	float delta, x1, x2;
+	
+	delta = (b*b) - (4*a*c);
         
         if (delta >= 0){
             x1 = (float) ((-b + Math.sqrt(delta))/2*a);
@@ -36,10 +44,9 @@ public class lt01_20 {
             System.out.println("Valor de x2: " + x2);
         } else {
             System.out.println("Não existe raiz real para os coeficientes informados.");
-        }
-        
-        
-    }
+        }	
+
+}
     
 }
 

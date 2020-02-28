@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class lt01_18 {
     public static void lt01_18(){
-          int x,y,dif;
+          int x,y;
         
         Scanner teclado = new Scanner(System.in);
         System.out.println("Digite o valor do primeiro número: ");
@@ -22,9 +22,16 @@ public class lt01_18 {
         System.out.println("Digite o valor do segundo número: ");
         y = teclado.nextInt();
         
-        dif = (x>y)?x-y:y-x; // operador ternario
+        
+    }
+
+    public static void calcularDiferenca(int x, int y){
+
+	int dif;
+	
+	dif = (x>y)?x-y:y-x;
         
         System.out.println("O valor da diferença do maior pelo menor número é: " + dif);
-    }
+}
     
 }

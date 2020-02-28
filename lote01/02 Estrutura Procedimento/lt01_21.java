@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class lt01_21 {
     public static void lt01_21(){
-         float n1, n2, n3, n4, media;
+         float n1, n2, n3, n4;
         
         System.out.println("*** CALCULO DE MEDIA ***");
         Scanner teclado = new Scanner(System.in);
@@ -30,7 +30,15 @@ public class lt01_21 {
         System.out.println("Digite a quarta nota bimestral: ");
         n4 = teclado.nextFloat();
         
-        media = (n1 + n2 + n3 + n4)/4;
+	calcularMedia(n1, n2, n3, n4);
+        
+    }
+
+    public static void calcularMedia(float n1, float n2, float n3, float n4){
+
+	float media;
+	
+	media = (n1 + n2 + n3 + n4)/4;
         
         System.out.println("A sua média bimestral é: " + media);
         
@@ -43,7 +51,7 @@ public class lt01_21 {
                 System.out.println("EXAME");
             }
         }
-    }
-    
+	
+    }   
 }
 

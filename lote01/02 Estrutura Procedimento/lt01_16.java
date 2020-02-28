@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -13,29 +13,34 @@ import java.util.Scanner;
  */
 public class lt01_16 {
     public static void lt01_16(){
-        float ht, vh, pd, nd, salB, salL, desc;
+        public float horasTrabalhadas, valorHora, percentualDescontos, dependentes;
         
         System.out.println("*** SALARIO LIQUIDO ***");
         
         System.out.println("Digite a quantidade de horas trabalhadas: ");
         Scanner teclado= new Scanner(System.in);
-        ht = teclado.nextFloat();
+        horasTrabalhadas = teclado.nextFloat();
         
         System.out.println("Digite o valor da hora trabalhada: ");
-        vh = teclado.nextFloat();
+        valorHora = teclado.nextFloat();
         
         System.out.println("Digite o percentual de descontos: ");
-        pd = teclado.nextFloat();
+        percentualDescontos = teclado.nextFloat();
         
         System.out.println("Digite a quantidade de dependentes: ");
-        nd = teclado.nextFloat();
+        dependentes = teclado.nextFloat();
         
-        salB = ht * vh + 100 * nd;
-        desc = salB * pd / 100;
-        salL = salB - desc;
         
-        System.out.println("O valor do salário líquido é: " + salL);
     }
-    
+
+    public static void calcularSalario(float horasTrabalhadas, float valorHora, float percentualDescontos, float dependentes){
+	float salarioBruto, salarioLiquido, desconto;
+
+	salarioBruto = horasTrabalhadas * valorHora + 100 * dependentes;
+        desconto = salarioBase * percentualDescontos / 100;
+        salarioLiquido = salarioBruto - dependentes;
+        
+        System.out.println("O valor do salário líquido é: " + salarioLiquido);
+    }
 }
 

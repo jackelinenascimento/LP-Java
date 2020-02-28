@@ -1,4 +1,4 @@
-/*
+﻿/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -23,13 +23,19 @@ public class lt01_22 {
         System.out.println("Digite o valor do segundo número: ");
         y = teclado.nextInt();
         
-        System.out.println("Os número em ordem crescente... ");
+	ordenarCrescente(x, y);
+        
+    }
+    
+    public static void ordernarCrescente(int x, int y){
+
+	System.out.println("Os número em ordem crescente... ");
         if(x>y){
             System.out.println(x + " " + y);
         } else {
             System.out.println(y + " " + x);
         }
         
-    }
+ }
     
 }
