@@ -10,10 +10,18 @@ package lote01;
  * @author Laboratorio101
  */
 public class lt01_31 {
-    public static void lt01_31(){
-        
-        for (int i = 10; i <= 150; i++){
-            System.out.println("Quadrado de " + i + " é: " + i*i);
-        }
-}
+	public static void lt01_31(){
+
+		for (int i = 10; i <= 150; i++){
+			System.out.println("Quadrado de " + i + " é: " + Quadrado(i));
+        	}
+	}
+	
+	public static int Quadrado(int i){
+	
+		int quadrado;
+		quadrado = i * i;
+		return quadrado;	
+		
+	}	
 }
